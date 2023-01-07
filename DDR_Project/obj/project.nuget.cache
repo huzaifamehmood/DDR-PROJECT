@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ibIj9Nm4/XoRKYWNS2NqSRN1sOApPs3PQSYSCoFuooV104JhZnzxwzzbuCOyO7szNx6IwJno9VsEauaOhJjbLg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\huzaifa\\semester 7\\DDR\\project\\DDR_Project\\DDR_Project\\DDR_Project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
