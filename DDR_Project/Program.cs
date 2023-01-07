@@ -39,22 +39,22 @@ namespace DDR_Project
 			var aliCanDiscountSpec = Factory<IOrderAggregate>.GetUserCanDiscountSpecification(Ali);
 
             //Should all be false - Huzaifa only has the "Invoicing" Role...none of the customer service roles
-            //Console.WriteLine("Huzaifa (ROLE: Invoiving) can Modify Order1: " + huzaifaCanDiscountSpec.IsSatisfiedBy(order1));
-            //Console.WriteLine("Huzaifa (ROLE: Invoiving) can Modify Order2: " + huzaifaCanDiscountSpec.IsSatisfiedBy(order2));
-            //Console.WriteLine("Huzaifa (ROLE: Invoiving) can Modify Order3: " + huzaifaCanDiscountSpec.IsSatisfiedBy(order3));
-            //Console.WriteLine("");
+            Console.WriteLine("Huzaifa (ROLE: Invoiving) can Modify Order1: " + huzaifaCanDiscountSpec.IsSatisfiedBy(order1));
+            Console.WriteLine("Huzaifa (ROLE: Invoiving) can Modify Order2: " + huzaifaCanDiscountSpec.IsSatisfiedBy(order2));
+            Console.WriteLine("Huzaifa (ROLE: Invoiving) can Modify Order3: " + huzaifaCanDiscountSpec.IsSatisfiedBy(order3));
+            Console.WriteLine("");
 
             //// Should all be true - Umair is a Customer Service Representative
-            //Console.WriteLine("Umair (ROLE: Customer Service Representative) can Modify Order1: " + umairCanDiscountSpec.IsSatisfiedBy(order1));
-            //Console.WriteLine("Umair (ROLE: Customer Service Representative) can Modify Order2: " + umairCanDiscountSpec.IsSatisfiedBy(order2));
-            //Console.WriteLine("Umair (ROLE: Customer Service Representative) can Modify Order3: " + umairCanDiscountSpec.IsSatisfiedBy(order3));
-            //Console.WriteLine();
+            Console.WriteLine("Umair (ROLE: Customer Service Representative) can Modify Order1: " + umairCanDiscountSpec.IsSatisfiedBy(order1));
+            Console.WriteLine("Umair (ROLE: Customer Service Representative) can Modify Order2: " + umairCanDiscountSpec.IsSatisfiedBy(order2));
+            Console.WriteLine("Umair (ROLE: Customer Service Representative) can Modify Order3: " + umairCanDiscountSpec.IsSatisfiedBy(order3));
+            Console.WriteLine();
 
             //// Should all be true - Ali is a Customer Service Manager
-            //Console.WriteLine("Ali (ROLE: Customer Service Manager) can Modify Order1: " + aliCanDiscountSpec.IsSatisfiedBy(order1));
-            //Console.WriteLine("Ali (ROLE: Customer Service Manager) can Modify Order2: " + aliCanDiscountSpec.IsSatisfiedBy(order2));
-            //Console.WriteLine("Ali (ROLE: Customer Service Manager) can Modify Order3: " + aliCanDiscountSpec.IsSatisfiedBy(order3));
-            //Console.WriteLine();
+            Console.WriteLine("Ali (ROLE: Customer Service Manager) can Modify Order1: " + aliCanDiscountSpec.IsSatisfiedBy(order1));
+            Console.WriteLine("Ali (ROLE: Customer Service Manager) can Modify Order2: " + aliCanDiscountSpec.IsSatisfiedBy(order2));
+            Console.WriteLine("Ali (ROLE: Customer Service Manager) can Modify Order3: " + aliCanDiscountSpec.IsSatisfiedBy(order3));
+            Console.WriteLine();
 
 
 
@@ -67,12 +67,12 @@ namespace DDR_Project
 
 
 
-            var umairCanDiscountOrder1By10Spec = Factory<IOrderAggregate>.GetUserCanDiscountByAmountSpecification(Umair, 10);
-            var umairCanDiscountOrder1By25Spec = Factory<IOrderAggregate>.GetUserCanDiscountByAmountSpecification(Umair, 25);
+          //  var umairCanDiscountOrder1By10Spec = Factory<IOrderAggregate>.GetUserCanDiscountByAmountSpecification(Umair, 10);
+           // var umairCanDiscountOrder1By25Spec = Factory<IOrderAggregate>.GetUserCanDiscountByAmountSpecification(Umair, 25);
 
-            Console.WriteLine("Umair (ROLE: Customer Service Representative) can Modify Order1 by 10: " + umairCanDiscountOrder1By10Spec.IsSatisfiedBy(order1));
-            Console.WriteLine("Umair (ROLE: Customer Service Representative) can Modify Order2 by 25: " + umairCanDiscountOrder1By25Spec.IsSatisfiedBy(order1));
-            Console.WriteLine();
+            //Console.WriteLine("Umair (ROLE: Customer Service Representative) can Modify Order1 by 10: " + umairCanDiscountOrder1By10Spec.IsSatisfiedBy(order1));
+           // Console.WriteLine("Umair (ROLE: Customer Service Representative) can Modify Order2 by 25: " + umairCanDiscountOrder1By25Spec.IsSatisfiedBy(order1));
+           // Console.WriteLine();
 
             //var aliCanDiscountOrder1By10Spec = Factory<IOrderAggregate>.GetUserCanDiscountByAmountSpecification(Ali, 10);
             //var aliCanDiscountOrder1By25Spec = Factory<IOrderAggregate>.GetUserCanDiscountByAmountSpecification(Ali, 25);
